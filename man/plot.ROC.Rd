@@ -4,7 +4,7 @@
 \alias{plot.ROC}
 \title{Plot a ROC curve}
 \usage{
-plot.ROC(ROC.table, main = "ROC", xlab = "negative scores",
+\method{plot}{ROC}(ROC.table, main = "ROC", xlab = "negative scores",
   ylab = "positive scores", add = FALSE, ...)
 }
 \arguments{
