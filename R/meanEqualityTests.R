@@ -226,7 +226,7 @@ meanEqualityTests <- function(x,
   if ("levene2g" %in% selected.tests) {
     verbose(paste(sep="", "Running Levene 2-groups variance equality test (",goi," vs other)"), 1)
     if (!require(lawstat)) {
-      install.packages(lawstat)
+      install.packages("lawstat")
       library(lawstat)
     }
     
