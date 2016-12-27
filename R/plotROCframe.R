@@ -1,0 +1,57 @@
+################################################################
+## Plot an empty frame for the ROC curve:
+## - axes from 0 to 1
+## - diagonals
+## - grid every 0.1
+#' @title Plot an empty frame to draw a ROC curve
+#' @author Jacques van Helden (\email{Jacques.van-Helden@@univ-amu.fr})
+#' @description Plot an empty frame to draw a ROC curve
+#' @details
+#' First version: 2015-04
+#' Last modification: 2015-04
+#' @param main="ROC curve"  Main title for the plot
+#' @param xlab="False Positive Rate (FPR)"  Label for the abcsissa
+#' @param ylab="True Positive Rate (TPR)" Label for the ordinate
+#' @param xlim=c(0,1)  Limits for the abcsissa
+#' @param ylim=c(0,1)  Limits for the ordinates
+#' @param grid.bars=seq(from=0,to=1,by=0.1) Grid bars
+#' @param plot.limits=TRUE Plot a black rectangle with the limits.
+#' @param plot.diagonal=TRUE Plot the diagonal to indicate random expectation.
+#' @param ... Additional parameters are passed to plot().
+#' @export
+plotROCframe <- function(main="ROC curve",
+                         xlab="FPR",
+                         ylab="Sensitivity",
+                         xlim=c(0,1),
+                         ylim=c(0,1),
+                         grid.bars = seq(from=0,to=1,by=0.1),
+                         plot.limits=TRUE,
+                         plot.diagonal=TRUE,
+                         ...) {
+  
+  ## Plot the frame
+  plot(0, 
+       0, 
+       xlab=xlab, 
+       ylab=ylab, 
+       xlim=xlim, 
+       ylim=ylim, 
+       type="n",
+       main=main, ...)
+  
+  ## Plot grid every 10%
+  abline(v=grid.bars,col="#DDDDDD")
+  abline(h=grid.bars,col="#DDDDDD")
+  
+  ## Plot limits
+  if (plot.limits) {
+    abline(h=0:1,col="#888888")
+    abline(v=0:1,col="#888888")
+  }
+  
+  ## Highlight the diagonal
+  if (plot.diagonal) {
+    abline(a=0,b=1,col="#888888")
+    #  abline(a=1,b=-1,col="#BBBBBB")
+  }
+}

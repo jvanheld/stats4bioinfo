@@ -1,0 +1,20 @@
+; convert-background-model  -v 1 -i material/markov_models/Escherichia_coli_K12/models/1nt_genomic_Escherichia_coli_K12-1str-ovlp.freq.gz -o material/markov_models/Escherichia_coli_K12/models/1nt_genomic_Escherichia_coli_K12-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	material/markov_models/Escherichia_coli_K12/models/1nt_genomic_Escherichia_coli_K12-1str-ovlp.freq.gz
+; Output files
+;	output	material/markov_models/Escherichia_coli_K12/models/1nt_genomic_Escherichia_coli_K12-1str-ovlp_transitions.tab
+; Markov order	0
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+	0.2462	0.2542	0.2536	0.2460	1	1
+; Sum  	0.246225	0.25419	0.253628	0.245957	1 \ 1
+; P_res	0.2462	0.2542	0.2536	0.2460
+; Host name	rsat-tagc
+; Job started	2015-10-29.211053
+; Job done	2015-10-29.211053
+; Seconds	0.26
+;	user	0.26
+;	system	0.02
+;	cuser	0
+;	csystem	0

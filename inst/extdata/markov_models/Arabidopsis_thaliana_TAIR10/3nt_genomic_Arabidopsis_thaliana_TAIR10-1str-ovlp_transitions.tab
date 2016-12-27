@@ -1,0 +1,35 @@
+; convert-background-model  -v 1 -i data/markov_models/Arabidopsis_thaliana_TAIR10/models/3nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp.freq.gz -o data/markov_models/Arabidopsis_thaliana_TAIR10/models/3nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	data/markov_models/Arabidopsis_thaliana_TAIR10/models/3nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp.freq.gz
+; Output files
+;	output	data/markov_models/Arabidopsis_thaliana_TAIR10/models/3nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp_transitions.tab
+; Markov order	2
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+aa	0.3797	0.1720	0.1913	0.2570	1	0.115
+ac	0.3709	0.2052	0.1298	0.2941	1	0.0524
+ag	0.3880	0.1804	0.1722	0.2594	1	0.0595
+at	0.2764	0.1997	0.2026	0.3213	1	0.0921
+ca	0.3713	0.1701	0.1643	0.2944	1	0.0635
+cc	0.3849	0.1673	0.1463	0.3015	1	0.0343
+cg	0.3471	0.1559	0.2103	0.2867	1	0.0238
+ct	0.2220	0.2336	0.1748	0.3697	1	0.0595
+ga	0.3505	0.1455	0.2174	0.2866	1	0.0641
+gc	0.3395	0.1847	0.1219	0.3539	1	0.0304
+gg	0.3560	0.1644	0.1660	0.3136	1	0.0341
+gt	0.2401	0.1777	0.2061	0.3761	1	0.0523
+ta	0.3313	0.1644	0.1720	0.3324	1	0.0765
+tc	0.3220	0.1892	0.1288	0.3600	1	0.064
+tg	0.3255	0.1613	0.2072	0.3060	1	0.0634
+tt	0.2197	0.1955	0.2056	0.3792	1	0.115
+; Sum  	5.225	2.86682	2.81633	5.09185	16 \ 16
+; P_res	0.3192	0.1811	0.1809	0.3188
+; Host name	rsat-tagc
+; Job started	2015-10-29.212155
+; Job done	2015-10-29.212155
+; Seconds	0.27
+;	user	0.27
+;	system	0.02
+;	cuser	0
+;	csystem	0

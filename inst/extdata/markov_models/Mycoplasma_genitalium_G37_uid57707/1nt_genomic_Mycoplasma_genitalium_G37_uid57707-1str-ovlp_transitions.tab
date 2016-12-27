@@ -1,0 +1,20 @@
+; convert-background-model  -v 1 -i material/markov_models/Mycoplasma_genitalium_G37_uid57707/models/1nt_genomic_Mycoplasma_genitalium_G37_uid57707-1str-ovlp.freq.gz -o material/markov_models/Mycoplasma_genitalium_G37_uid57707/models/1nt_genomic_Mycoplasma_genitalium_G37_uid57707-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	material/markov_models/Mycoplasma_genitalium_G37_uid57707/models/1nt_genomic_Mycoplasma_genitalium_G37_uid57707-1str-ovlp.freq.gz
+; Output files
+;	output	material/markov_models/Mycoplasma_genitalium_G37_uid57707/models/1nt_genomic_Mycoplasma_genitalium_G37_uid57707-1str-ovlp_transitions.tab
+; Markov order	0
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+	0.3448	0.1587	0.1600	0.3365	1	1
+; Sum  	0.344763	0.158686	0.160036	0.336515	1 \ 1
+; P_res	0.3448	0.1587	0.1600	0.3365
+; Host name	rsat-tagc
+; Job started	2015-10-29.211038
+; Job done	2015-10-29.211038
+; Seconds	0.27
+;	user	0.27
+;	system	0.02
+;	cuser	0
+;	csystem	0

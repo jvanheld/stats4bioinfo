@@ -1,0 +1,20 @@
+; convert-background-model  -v 1 -i data/markov_models/Drosophila_melanogaster_BDGP6/models/1nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp.freq.gz -o data/markov_models/Drosophila_melanogaster_BDGP6/models/1nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	data/markov_models/Drosophila_melanogaster_BDGP6/models/1nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp.freq.gz
+; Output files
+;	output	data/markov_models/Drosophila_melanogaster_BDGP6/models/1nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp_transitions.tab
+; Markov order	0
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+	0.2896	0.2105	0.2103	0.2895	1	1
+; Sum  	0.289634	0.210541	0.21032	0.289505	1 \ 1
+; P_res	0.2896	0.2105	0.2103	0.2895
+; Host name	rsat-tagc
+; Job started	2015-10-29.213430
+; Job done	2015-10-29.213430
+; Seconds	0.26
+;	user	0.26
+;	system	0.02
+;	cuser	0
+;	csystem	0

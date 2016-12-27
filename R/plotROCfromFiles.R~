@@ -1,0 +1,62 @@
+
+## ##############################################################
+## Plot a series of ROC curves from a set of data files.
+## Each input file must be a tab-delimted text file with 3 columns:
+## - score
+## - frequency of true positive above the score (e.g.regulons)
+## - frequencies of false positive above the score (e.g. random gene selections)
+##
+## One separate curve is plotted for each data file. This is
+## convenient to compare performances of a program with different
+## parameters, or to compare the performances obtained with different
+## programs
+plot.ROC.curves.from.files <- function(data.files, ## A list of files
+                                       line.type = "l", ## line type for the plots
+                                       main='ROC curve -  regulons versus random gene selections',
+                                       xlab='random gene selections',
+                                       ylab='regulons',
+                                       ... ## Other parameters are passed to the plot() function
+) {
+  
+  ## Plot the background lines
+  plotROCframe(main=main,xlab=xlab,ylab=ylab,...)
+  #   plot(c(0,1),
+  #        c(0,1),
+  #        type='l',
+  #        panel.first=grid(col='#000000'),
+  #        main=main,
+  #        xlab=xlab,
+  #        ylab=ylab,
+  #        ...
+  #        )
+  #   lines(c(1,0),c(0,1),type='b',col='#BBBBBB')
+  
+  i <- 0
+  data.colors <- vector()
+  
+  for (file.data in data.files) {
+    ## Assign a color to each data file
+    i <- i+1
+    data.colors[file.data] <- i
+    
+    ## Read the data file
+    setwd(dir.compa); x <- read.table(file.data,header=T)
+    names(x) <- c('sig', 'regulons', 'random.genes')
+    
+    if (sum(x$random.genes) < sum(x$regulons)) {
+      lines(x$random.genes, x$regulons,
+            type=line.type,
+            col=data.colors[file.data],
+            lwd=2
+      )
+    } else {
+      lines(1- x$random.genes, 1- x$regulons,
+            type=line.type,
+            col=data.colors[file.data],
+            lwd=2
+      )
+    }
+  }
+  legend(0.5,0.5,legend=data.files,col=data.colors,lwd=2,bty="n")
+  
+}

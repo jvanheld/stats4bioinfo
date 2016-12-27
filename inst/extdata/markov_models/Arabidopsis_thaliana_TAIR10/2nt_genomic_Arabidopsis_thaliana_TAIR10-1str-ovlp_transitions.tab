@@ -1,0 +1,23 @@
+; convert-background-model  -v 1 -i data/markov_models/Arabidopsis_thaliana_TAIR10/models/2nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp.freq.gz -o data/markov_models/Arabidopsis_thaliana_TAIR10/models/2nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	data/markov_models/Arabidopsis_thaliana_TAIR10/models/2nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp.freq.gz
+; Output files
+;	output	data/markov_models/Arabidopsis_thaliana_TAIR10/models/2nt_genomic_Arabidopsis_thaliana_TAIR10-1str-ovlp_transitions.tab
+; Markov order	1
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+a	0.3606	0.1645	0.1865	0.2884	1	0.319
+c	0.3510	0.1890	0.1312	0.3288	1	0.181
+g	0.3547	0.1675	0.1883	0.2895	1	0.181
+t	0.2399	0.2009	0.1991	0.3602	1	0.319
+; Sum  	1.30609	0.72182	0.705135	1.26696	4 \ 4
+; P_res	0.3192	0.1811	0.1809	0.3188
+; Host name	rsat-tagc
+; Job started	2015-10-29.211903
+; Job done	2015-10-29.211903
+; Seconds	0.26
+;	user	0.26
+;	system	0.02
+;	cuser	0
+;	csystem	0

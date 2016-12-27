@@ -1,0 +1,20 @@
+; convert-background-model  -v 1 -i data/markov_models/Homo_sapiens_GRCh38/models/1nt_genomic_Homo_sapiens_GRCh38-1str-ovlp.freq.gz -o data/markov_models/Homo_sapiens_GRCh38/models/1nt_genomic_Homo_sapiens_GRCh38-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	data/markov_models/Homo_sapiens_GRCh38/models/1nt_genomic_Homo_sapiens_GRCh38-1str-ovlp.freq.gz
+; Output files
+;	output	data/markov_models/Homo_sapiens_GRCh38/models/1nt_genomic_Homo_sapiens_GRCh38-1str-ovlp_transitions.tab
+; Markov order	0
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+	0.2947	0.2044	0.2052	0.2957	1	1
+; Sum  	0.294731	0.204367	0.205236	0.295666	1 \ 1
+; P_res	0.2947	0.2044	0.2052	0.2957
+; Host name	rsat-tagc
+; Job started	2015-10-29.230605
+; Job done	2015-10-29.230605
+; Seconds	0.27
+;	user	0.27
+;	system	0.02
+;	cuser	0
+;	csystem	0

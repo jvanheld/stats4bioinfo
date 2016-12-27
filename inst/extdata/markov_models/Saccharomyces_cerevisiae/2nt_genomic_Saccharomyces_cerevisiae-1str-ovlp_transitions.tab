@@ -1,0 +1,23 @@
+; convert-background-model  -v 1 -i material/markov_models/Saccharomyces_cerevisiae/models/2nt_genomic_Saccharomyces_cerevisiae-1str-ovlp.freq.gz -o material/markov_models/Saccharomyces_cerevisiae/models/2nt_genomic_Saccharomyces_cerevisiae-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	material/markov_models/Saccharomyces_cerevisiae/models/2nt_genomic_Saccharomyces_cerevisiae-1str-ovlp.freq.gz
+; Output files
+;	output	material/markov_models/Saccharomyces_cerevisiae/models/2nt_genomic_Saccharomyces_cerevisiae-1str-ovlp_transitions.tab
+; Markov order	1
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+a	0.3497	0.1706	0.1888	0.2909	1	0.309
+c	0.3380	0.2046	0.1541	0.3034	1	0.191
+g	0.3255	0.1962	0.2035	0.2747	1	0.191
+t	0.2407	0.2014	0.2089	0.3490	1	0.308
+; Sum  	1.25391	0.772784	0.755335	1.21797	4 \ 4
+; P_res	0.3092	0.1915	0.1912	0.3081
+; Host name	rsat-tagc
+; Job started	2015-10-29.211208
+; Job done	2015-10-29.211208
+; Seconds	0.26
+;	user	0.26
+;	system	0.02
+;	cuser	0
+;	csystem	0

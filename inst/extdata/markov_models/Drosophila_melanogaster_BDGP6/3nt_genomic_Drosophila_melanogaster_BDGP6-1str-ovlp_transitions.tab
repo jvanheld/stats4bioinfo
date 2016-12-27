@@ -1,0 +1,35 @@
+; convert-background-model  -v 1 -i data/markov_models/Drosophila_melanogaster_BDGP6/models/3nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp.freq.gz -o data/markov_models/Drosophila_melanogaster_BDGP6/models/3nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp_transitions.tab -from oligo-analysis -to transitions -decimals 4
+; Input files
+;	input	data/markov_models/Drosophila_melanogaster_BDGP6/models/3nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp.freq.gz
+; Output files
+;	output	data/markov_models/Drosophila_melanogaster_BDGP6/models/3nt_genomic_Drosophila_melanogaster_BDGP6-1str-ovlp_transitions.tab
+; Markov order	2
+; Background pseudo-frequency	0.01
+; Strand	sensitive
+#pr\suf	a	c	g	t	Sum	P_prefix
+aa	0.3810	0.1693	0.1720	0.2776	1	0.101
+ac	0.3484	0.1977	0.1782	0.2757	1	0.0528
+ag	0.2679	0.2684	0.1969	0.2669	1	0.0545
+at	0.2638	0.1785	0.2111	0.3466	1	0.0811
+ca	0.3239	0.2044	0.2204	0.2514	1	0.0679
+cc	0.3535	0.2133	0.2018	0.2313	1	0.0466
+cg	0.2964	0.2511	0.2262	0.2264	1	0.0416
+ct	0.1852	0.2215	0.2736	0.3198	1	0.0545
+ga	0.3411	0.1834	0.2156	0.2598	1	0.0557
+gc	0.3144	0.2348	0.1878	0.2631	1	0.0554
+gg	0.2829	0.2798	0.2130	0.2243	1	0.0465
+gt	0.2180	0.1942	0.2629	0.3249	1	0.0527
+ta	0.3352	0.1783	0.1559	0.3306	1	0.0646
+tc	0.2814	0.2360	0.2208	0.2618	1	0.0558
+tg	0.2316	0.2562	0.2422	0.2700	1	0.0678
+tt	0.2139	0.1883	0.2171	0.3807	1	0.101
+; Sum  	4.63852	3.45506	3.39566	4.51076	16 \ 16
+; P_res	0.2896	0.2105	0.2103	0.2895
+; Host name	rsat-tagc
+; Job started	2015-10-29.214118
+; Job done	2015-10-29.214118
+; Seconds	0.27
+;	user	0.27
+;	system	0.02
+;	cuser	0
+;	csystem	0
