@@ -225,7 +225,10 @@ meanEqualityTests <- function(x,
   ## row of the input matrix.
   if ("levene2g" %in% selected.tests) {
     verbose(paste(sep="", "Running Levene 2-groups variance equality test (",goi," vs other)"), 1)
-    library(lawstat)
+    if (!require(lawstat)) {
+      install.packages(lawstat)
+      library(lawstat)
+    }
     
     stats.per.row$levene2g.p.value <- apply(x,
                                        1,
